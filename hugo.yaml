@@ -1,0 +1,109 @@
+baseURL: "https://mricks.io/"
+title: "Michael Ricks"
+paginate: 10
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+
+params:
+  env: production
+  title: "Michael Ricks"
+  description: "Neuroscience · Neuromodulation · Clinical Research"
+  author: "Michael Ricks"
+
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  homeInfoParams:
+    Title: "Michael Ricks"
+    Content: >
+      Neuroscience researcher and clinical neuromodulation specialist.
+      I write about brain stimulation, evidence-based protocol development,
+      and the translational gap between neuroscience research and clinical practice.
+
+
+      *For use of any content on this site or to discuss collaboration opportunities, please [get in touch](/contact).*
+
+  socialIcons:
+    - name: linkedin
+      url: "https://linkedin.com/in/"
+    - name: github
+      url: "https://github.com/Chyckun"
+    - name: email
+      url: "mailto:michael@mricks.io"
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: reviews
+      name: Clinical Reviews
+      url: /reviews/
+      weight: 10
+    - identifier: guides
+      name: Practical Guides
+      url: /guides/
+      weight: 20
+    - identifier: highlights
+      name: Highlights
+      url: /highlights/
+      weight: 25
+    - identifier: posts
+      name: Essays
+      url: /posts/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 50
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 60
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
